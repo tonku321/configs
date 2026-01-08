@@ -155,6 +155,7 @@
 					"string": { "color": "#73c1a9", "font_style": null, "font_weight": null },
 					"tag": { "color": "#ac8b83", "font_style": null, "font_weight": null },
 					"type": { "color": "#ac8b83", "font_style": null, "font_weight": null },
+					"namespace": { "color": "#ac8b83", "font_style": null, "font_weight": null },
 					"variable": { "color": "#9ea3c0", "font_style": null, "font_weight": null },
 					"variable.special": { "color": "#ac8b83", "font_style": null, "font_weight": null }
 				}

@@ -9,7 +9,9 @@
 			"ctrl-l": null,
 			"shift-l": null,
 			"cmd-t": null,
-			"cmd-j": null
+			"cmd-j": null,
+			"g t": null
+			// "cmd-a": null
 		}
 	},
 	{
@@ -25,6 +27,14 @@
 			"shift-cmd-t": "project_symbols::Toggle"
 		}
 	},
+
+	{
+		"context": "Editor && mode == full",
+		"bindings": {
+			// "cmd-a": [ "assistant::InlineAssist", { "prompt": "Simplify the code, make it shorter and clearer, make it more dense, that is, so that more business logic is expressed shorter, but not too much" } ]
+		}
+	},
+
 	{
 		"context": "Editor && (showing_code_actions || showing_completions)",
 		"bindings": {
@@ -49,6 +59,7 @@
 			"g r": "editor::FindAllReferences",
 			"d d": "editor::DeleteLine",
 			"g y": "editor::GoToTypeDefinition",
+			"g d": "editor::GoToDefinition",
 
 			"9": "editor::MoveToEndOfLine",
 			"8": "vim::Matching",
@@ -123,6 +134,9 @@
 			"ctrl-f":null,
 			"H":null,
 			"L":null,
+
+			"cmd-v": ["vim::Paste", { "preserve_clipboard": true }],
+			"p": ["vim::Paste", { "preserve_clipboard": true }],
 		}
 	},
 	{
