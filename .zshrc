@@ -18,7 +18,6 @@ alias python="/opt/homebrew/bin/python3"
 alias pip="/opt/homebrew/bin/pip3"
 alias sqlite-browser="/Applications/DB\\ Browser\\ for\\ SQLite.app/Contents/MacOS/DB\\ Browser\\ for\\ SQLite"
 
-alias gh="github ."
 alias gc="git add . && git commit -m '...' --no-verify"
 alias ga="git add . && git commit --amend --no-verify --no-edit"
 alias studio="open -a /Applications/Android\ Studio.app"
