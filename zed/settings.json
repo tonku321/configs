@@ -1,8 +1,18 @@
 {
+	"agent_servers": {
+  "claude": {
+   "default_model": "opus",
+   "favorite_models": [],
+   "default_config_options": {},
+   "favorite_config_option_values": {}
+  }
+ },
+ "edit_predictions": { "mode": "subtle" },
 	"vim_mode": true,
 	"vim": { "use_system_clipboard": "always" },
 
 	"status_bar": { "active_language_button": false, "experimental.show": true },
+	"global_lsp_settings": { "button": false },
 
 	"theme": "tonku",
 
@@ -58,7 +68,7 @@
 		"scrollbar": { "show": "never" },
 		"git_status": false,
 		"indent_guides": { "show": "never" },
-		"dock": "left",
+		"dock": "right",
 		"indent_size": 15
 	},
 	"show_call_status_icon": false,
@@ -89,6 +99,7 @@
 		"cursor_shape": "bar",
 		"blinking": "off",
 		"dock": "bottom",
+		"button": false,
 		"line_height": "comfortable",
 		"minimum_contrast": 0
 	},
@@ -96,10 +107,10 @@
 	"agent": {
 		"button": true,
 		"enabled": true,
-		"dock": "left"
+		"dock": "left",
 	},
 	"agent_ui_font_size": 14,
-	"agent_buffer_font_size": 11,
+	"agent_buffer_font_size": 12,
 
 	"show_edit_predictions": false,
 

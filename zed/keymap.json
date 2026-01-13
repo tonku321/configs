@@ -16,7 +16,8 @@
 	},
 	{
 		"bindings": {
-			"cmd-n": "workspace::ToggleLeftDock",
+			"cmd-b": "workspace::ToggleLeftDock",
+			"cmd-n": "workspace::ToggleRightDock",
 			"cmd-1": "pane::ActivatePreviousItem",
 			"cmd-2": "pane::ActivateNextItem",
 			"ctrl-j": "menu::SelectNext",
