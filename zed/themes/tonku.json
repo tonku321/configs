@@ -132,6 +132,12 @@
 				"error.border": "#b18181",
 				"error.background": "#33364d",
 
+				"version_control.added": "#6a8ec8",
+				"version_control.word_added": "#6a8ec800",
+				"version_control.modified": "#5780c1",
+				"version_control.deleted": "#f4a261",
+				"version_control.word_deleted": "#f4a26100",
+
 				"syntax": {
 					"attribute": { "color": "#929be5", "font_style": null, "font_weight": null },
 					"boolean": { "color": "#73c1a9", "font_style": null, "font_weight": null },
