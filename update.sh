@@ -15,5 +15,6 @@ cp -R ~/.config/zed/themes ./zed/
 git rm --ignore-unmatch -rf ./claude
 mkdir ./.claude
 cp -R ~/.claude/settings.json .claude/settings.json
+cp -R ~/.claude/CLAUDE.md .claude/CLAUDE.md
 
 git add . && git commit -m "..." && git push
