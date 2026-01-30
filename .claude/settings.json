@@ -1,0 +1,10 @@
+{
+	"permissions": {
+		"allow": [
+			"Bash(*)",
+			"mcp__acp__*",
+			"mcp__atlassian-mcp__*",
+			"mcp__mcp-server-github__*"
+		]
+	}
+}

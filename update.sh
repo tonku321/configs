@@ -13,7 +13,7 @@ cp -R ~/.config/zed/keymap.json ./zed/
 cp -R ~/.config/zed/themes ./zed/
 
 git rm --ignore-unmatch -rf ./claude
-mkdir ./claude
+mkdir ./.claude
 cp -R ~/.claude/settings.json .claude/settings.json
 
 git add . && git commit -m "..." && git push
