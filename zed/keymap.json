@@ -30,13 +30,6 @@
 	},
 
 	{
-		"context": "Editor && mode == full",
-		"bindings": {
-			// "cmd-a": [ "assistant::InlineAssist", { "prompt": "Simplify the code, make it shorter and clearer, make it more dense, that is, so that more business logic is expressed shorter, but not too much" } ]
-		}
-	},
-
-	{
 		"context": "Editor && (showing_code_actions || showing_completions)",
 		"bindings": {
 			"up": "editor::ContextMenuPrevious",

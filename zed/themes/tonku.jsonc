@@ -10,6 +10,10 @@
 			"style": {
 				"border": "#393c56",
 				"border.variant": "#33364d",
+				// "border.disabled": "",                  // цвет границы для отключённых элементов (disabled)
+				// "border.focused": "",                   // граница элемента в фокусе (keyboard focus)
+				// "border.selected": "",                  // граница выбранного/выделенного элемента
+				// "border.transparent": "",               // полностью прозрачная граница (#00000000)
 
 				"elevated_surface.background": "#33364d",
 				"surface.background": "#33364d",
@@ -19,11 +23,13 @@
 				"element.hover": "#3b3f59",
 				"element.active": "#414662",
 				"element.selected": "#414662",
+				// "element.disabled": "",                 // фон отключённого элемента UI
 
 				"ghost_element.background": "#00000000",
 				"ghost_element.hover": "#3b3f59",
 				"ghost_element.active": "#414662",
 				"ghost_element.selected": "#414662",
+				// "ghost_element.disabled": "",           // фон отключённого призрачного элемента
 
 				"text": "#9ea3c0",
 				"text.muted": "#9ea3c0",
@@ -49,13 +55,18 @@
 				"toolbar.background": "#252737",
 
 				"search.match_background": "#474d6bE6",
+				// "search.active_match_background": "",   // фон активного (текущего) совпадения поиска
 
 				"panel.background": "#2b2d40",
 				"panel.focused_border": "#2b2d40",
 				"pane.focused_border": null,
 
 				"ignored": "#9ea3c0",
+				// "ignored.background": "",               // фон игнорируемых файлов (.gitignore)
+				// "ignored.border": "",                   // граница игнорируемых
 				"hidden": "#9ea3c0",
+				// "hidden.background": "",                // фон скрытых элементов (hidden files, collapsed)
+				// "hidden.border": "",                    // граница скрытых элементов
 
 				"scrollbar.thumb.background": "#666c9933",
 				"scrollbar.thumb.hover_background": "#666c9933",
@@ -85,6 +96,8 @@
 
 				"editor.document_highlight.read_background": "#3b3f59CC",
 				"editor.document_highlight.write_background": "#3b3f59CC",
+
+				// "editor.invisible": "",                 // цвет невидимых символов (whitespace)
 
 				"players": [{ "cursor": "#a3a8c2", "selection": "#43486580" }],
 
@@ -137,11 +150,38 @@
 				"version_control.modified": "#5780c1",
 				"version_control.deleted": "#f4a261",
 				"version_control.word_deleted": "#f4a26100",
+				// "version_control.conflict_marker.ours": "",   // "наша" сторона конфликта в merge
+				// "version_control.conflict_marker.theirs": "",  // "их" сторона конфликта в merge
 				"conflict": "#6a8ec8",
+				// "conflict.background": "",              // фон зоны конфликта (merge conflict)
+				// "conflict.border": "",                  // граница зоны конфликта
 				"created": "#6a8ec8",
+				// "created.background": "",               // фон для нового/созданного файла или изменения
+				// "created.border": "",                   // граница созданного
+				"modified": "#5780c1",
+				// "modified.background": "",              // фон modified (gutter/tab индикатор)
+				// "modified.border": "",                  // граница modified-зоны
 				"deleted": "#f4a261",
+				// "deleted.background": "",               // фон удалённого кода/файла
+				// "deleted.border": "",                   // граница удалённой области
 
 				"predictive": "#545d8c",
+				// "predictive.background": "",            // фон предсказанного текста (ghost completions)
+				// "predictive.border": "",                // граница предсказанного текста
+
+				// "success": "",                          // основной цвет успеха (зелёный)
+				// "success.background": "",               // фон успеха (индикатор)
+				// "success.border": "",                   // граница успеха
+
+				// "renamed": "",                          // основной цвет переименованного файла/символа
+				// "renamed.background": "",               // фон переименованного
+				// "renamed.border": "",                   // граница переименованного
+
+				// "unreachable": "",                      // цвет недостижимого/мёртвого кода
+				// "unreachable.background": "",           // фон недостижимого кода
+				// "unreachable.border": "",               // граница недостижимого
+
+				// "drop_target.background": "",           // фон области drag & drop (при перетаскивании)
 
 				"syntax": {
 					"attribute": { "color": "#929be5", "font_style": null, "font_weight": null },

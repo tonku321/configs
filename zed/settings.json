@@ -6,7 +6,7 @@
 		"active_language_button": false,
 		"experimental.show": true,
 	},
-	"global_lsp_settings": { "button": false },
+	"global_lsp_settings": { "button": true },
 
 	"theme": "tonku",
 
@@ -105,16 +105,30 @@
 		"button": true,
 		"enabled": true,
 		"dock": "left",
+		"show_turn_stats": true,
+		"default_profile": "write"
 	},
-	"agent_ui_font_size": 14,
-	"agent_buffer_font_size": 12,
+	"agent_ui_font_size": 13,
+	"agent_buffer_font_size": 11,
 	"agent_servers": {
 		"claude": {
 			"default_model": "opus",
-			"favorite_models": [],
 			"default_config_options": {},
 			"favorite_config_option_values": {},
 		},
+	},
+
+	"context_servers": {
+		"mcp-server-github": {
+   "enabled": true,
+			"command": "npx",
+			"args": ["-y", "@modelcontextprotocol/server-github"]
+		},
+		"atlassian-mcp": {
+   "enabled": true,
+			"command": "uvx",
+			"args": ["--python=3.12", "mcp-atlassian"]
+		}
 	},
 
 	"show_edit_predictions": true,
@@ -138,8 +152,8 @@
 		"git_gutter": "hide",
 	},
 	"git_panel": {
-		"button": false,
-		"dock": "right",
+		"button": true,
+		"dock": "left",
 	},
 
 	"format_on_save": "off",

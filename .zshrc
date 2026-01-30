@@ -1,11 +1,11 @@
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
-export PATH="~/Library/Android/sdk/platform-tools:$PATH"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
-export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
 
 alias rm="trash"
 alias ls="ls -lah"
