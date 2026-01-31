@@ -2,42 +2,40 @@
 
 This file provides guidance to Claude Code.
 
-## Tool Usage
+## Общее
 
-- Always use `mcp__acp__Bash` instead of the built-in `Bash` tool for executing commands.
-- Always use `mcp__acp__Read` instead of the built-in `Read` tool for reading files.
-- Always use `mcp__acp__Write` instead of the built-in `Write` tool for writing files.
-- Always use `mcp__acp__Edit` instead of the built-in `Edit` tool for editing files.
-- Load MCP tools via `ToolSearch` before first use in each session.
+- Всегда используй русский язык.
 
-## Think Before Coding
+## Подумай перед написанием кода.
 
-**Don't assume. Don't hide confusion. Surface tradeoffs.**
+- Не скрывай непонимание. Выноси разногласия на поверхность.
+- Явно формулируй все свои предположения. Если не уверен — спрашивай.
+- Если есть несколько вариантов интерпретации — перечисли их, не выбирай молча.
+- Если существует более простое решение — говори об этом. При необходимости возражай.
+- Если что-то непонятно — остановись. Назови, что именно вызывает вопросы. Спроси.
 
-Before implementing:
-- State your assumptions explicitly. If uncertain, ask.
-- If multiple interpretations exist, present them - don't pick silently.
-- If a simpler approach exists, say so. Push back when warranted.
-- If something is unclear, stop. Name what's confusing. Ask.
+## Использование инструментов
 
-## Simplicity First
+- Всегда используйте mcp__acp__Bash вместо встроенного инструмента Bash для выполнения команд.
+- Всегда используйте mcp__acp__Read вместо встроенного инструмента Read для чтения файлов.
+- Всегда используйте mcp__acp__Write вместо встроенного инструмента Write для записи файлов.
+- Всегда используйте mcp__acp__Edit вместо встроенного инструмента Edit для редактирования файлов.
+- Загружайте инструменты MCP через ToolSearch перед первым использованием в каждой сессии.
 
-**Minimum code that solves the problem. Nothing speculative.**
+## Простота прежде всего
 
-- No features beyond what was asked.
-- No abstractions for single-use code.
-- No "flexibility" or "configurability" that wasn't requested.
-- No error handling for impossible scenarios.
-- If you write 200 lines and it could be 50, rewrite it.
+- Минимальный код, который решает задачу. Ничего лишнего и предположительного.
+- Никаких функций сверх того, что прямо попросили.
+- Никаких абстракций для одноразового кода.
+- Никакой «гибкости» и «настраиваемости», если этого не требовали.
+- Никакой обработки ошибок для невозможных сценариев.
+- Если получилось 200 строк, а можно 50 — перепиши.
+- Задавай себе вопрос: «Сказал бы старший инженер, что это слишком усложнено?» Если да — упрощай.
 
-Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
-
-## Commit Messages
-
-- Write in Russian
-- Use first person, past tense verbs
-- First line — brief summary (up to ~72 characters)
-- After blank line — bullet list explaining what was changed and why (each bullet should have context, not just describe the change)
-- Keep messages concise and informative, not bloated
-- Include task ID at the beginning if applicable (e.g., "MER-1234: Исправил...")
-- Avoid generic messages like "fix", "update", "..."
+## Сообщения коммитов
+- Пиши на русском языке
+- Используй первое лицо, глаголы в прошедшем времени
+- Первая строка — краткое описание (до ~72 символов)
+- После пустой строки — маркированный список с пояснениями: что именно изменилось и зачем (каждый пункт должен давать контекст, а не просто пересказывать изменение)
+- Сообщения должны быть лаконичными и информативными, не раздувай
+- Избегай общих сообщений вида «fix», «update», «…»
